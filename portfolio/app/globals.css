@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #000319;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .underline{
+        display: flex;
+        justify-content: center;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero{
+        padding-bottom: 10px;
+    }
+    .project{
+        position: relative;
+        z-index: 999;
+    }
+    .project1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .project1 p{
+       width: 100%;
+       height: auto;
+       padding-left: 0px;
+       padding-right: 0px;
+    }
+
+    .projectimg , .projectcolumn{
+        width: 100%;
+    }
+
+   
+  .projectimg {
+    order: 1;
+  }
+
+  .projectcolumn {
+    order: 2;
+  }
+
+  #experience , .cardclass{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .footer{
+    margin-top: 15px;
+  }
+
+  .shiny{
+    padding: 0;
+  }
+   
+  }
+
+  @layer utilities {
+    .heading {
+      @apply font-bold text-4xl md:text-5xl text-center;
+    }
+  }
